@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+    transform: translate(0px, 100px);
+}
+.title {
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+    transform: translate(0px, -50px);
+}
+
+/*Grid holding the game board*/
+.game_row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 600px;
+}
+
+/*Individual Squares*/
+.game_square {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 180px;
+}
+
+/* Adds appropriate borders to containers */
+.dos, .ocho {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.quatro, .seis {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.cinco {
+    border: 2px solid black;
+}
